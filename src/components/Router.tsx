@@ -2,6 +2,14 @@ import { MemberProvider } from '@/integrations';
 import { createBrowserRouter, RouterProvider, Navigate, Outlet } from 'react-router-dom';
 import { ScrollToTop } from '@/lib/scroll-to-top';
 import ErrorPage from '@/integrations/errorHandlers/ErrorPage';
+import HomePage from '@/components/pages/HomePage';
+import HistoryPage from '@/components/pages/HistoryPage';
+import TimelinePage from '@/components/pages/TimelinePage';
+import LeadershipPage from '@/components/pages/LeadershipPage';
+import MinistriesPage from '@/components/pages/MinistriesPage';
+import MediaPage from '@/components/pages/MediaPage';
+import EventsPage from '@/components/pages/EventsPage';
+import ContactPage from '@/components/pages/ContactPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -21,9 +29,58 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>Wix Vibe</div>,
+        element: <HomePage />,
         routeMetadata: {
           pageIdentifier: 'home',
+        },
+      },
+      {
+        path: "history",
+        element: <HistoryPage />,
+        routeMetadata: {
+          pageIdentifier: 'history',
+        },
+      },
+      {
+        path: "timeline",
+        element: <TimelinePage />,
+        routeMetadata: {
+          pageIdentifier: 'timeline',
+        },
+      },
+      {
+        path: "leadership",
+        element: <LeadershipPage />,
+        routeMetadata: {
+          pageIdentifier: 'leadership',
+        },
+      },
+      {
+        path: "ministries",
+        element: <MinistriesPage />,
+        routeMetadata: {
+          pageIdentifier: 'ministries',
+        },
+      },
+      {
+        path: "media",
+        element: <MediaPage />,
+        routeMetadata: {
+          pageIdentifier: 'media',
+        },
+      },
+      {
+        path: "events",
+        element: <EventsPage />,
+        routeMetadata: {
+          pageIdentifier: 'events',
+        },
+      },
+      {
+        path: "contact",
+        element: <ContactPage />,
+        routeMetadata: {
+          pageIdentifier: 'contact',
         },
       },
       {
