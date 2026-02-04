@@ -20,7 +20,7 @@ interface FeatureItem {
 // Preserving original data structures and content exactly as requested.
 
 const HERO_CONTENT = {
-  title: "Mother of God Cathedral",
+  title: "A Legacy of Faith Through Time",
   subtitle: "Journey through decades of spiritual heritage, sacred moments, and unwavering devotion",
   cta: "Explore Our Story",
   ctaLink: "/history"
@@ -203,11 +203,9 @@ export default function HomePage() {
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
       `}</style>
-      
       <ScrollProgress />
       <NoiseOverlay />
       <Header />
-
       {/* --- HERO SECTION --- */}
       <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
         {/* Cinematic Background */}
@@ -234,7 +232,7 @@ export default function HomePage() {
             style={{ x: mousePosition.x * -1, y: mousePosition.y * -1 }}
             className="mb-8"
           >
-            <span className="inline-block py-1 px-3 border border-off-white/30 rounded-full text-xs font-paragraph tracking-[0.2em] text-off-white/80 uppercase mb-6 backdrop-blur-sm">
+            <span className="inline-block py-1 px-3 border border-off-white/30 rounded-full font-paragraph tracking-[0.2em] text-off-white/80 uppercase mb-6 backdrop-blur-sm text-lg">
               EST:1599
             </span>
             <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-off-white leading-[0.9] tracking-tight mix-blend-overlay opacity-90">
@@ -281,7 +279,6 @@ export default function HomePage() {
           <span className="text-[10px] uppercase tracking-[0.3em] text-off-white/60 font-paragraph">Scroll</span>
         </motion.div>
       </section>
-
       {/* --- INTRO SECTION (The Vision) --- */}
       <section className="relative py-32 lg:py-48 px-6 overflow-hidden">
         <div className="max-w-[100rem] mx-auto">
@@ -352,7 +349,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- STICKY PARALLAX DIVIDER --- */}
       <section className="relative h-[60vh] w-full overflow-hidden flex items-center justify-center bg-deep-brown text-off-white clip-path-slant">
         <div className="absolute inset-0 opacity-30">
@@ -376,7 +372,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* --- FEATURES GRID (The Archive) --- */}
       <section className="relative py-32 px-6 bg-off-white">
         <div className="max-w-[100rem] mx-auto">
@@ -440,7 +435,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- IMMERSIVE CTA SECTION --- */}
       <section className="relative py-40 px-6 bg-deep-brown overflow-hidden">
         {/* Animated Background Particles */}
@@ -488,7 +482,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
