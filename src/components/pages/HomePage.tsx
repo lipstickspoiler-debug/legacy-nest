@@ -235,7 +235,7 @@ export default function HomePage() {
             className="mb-8"
           >
             <span className="inline-block py-1 px-3 border border-off-white/30 rounded-full text-xs font-paragraph tracking-[0.2em] text-off-white/80 uppercase mb-6 backdrop-blur-sm">
-              Est. 1924
+              EST:1599
             </span>
             <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-off-white leading-[0.9] tracking-tight mix-blend-overlay opacity-90">
               {HERO_CONTENT.title}
