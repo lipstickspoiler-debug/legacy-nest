@@ -20,7 +20,7 @@ interface FeatureItem {
 // Preserving original data structures and content exactly as requested.
 
 const HERO_CONTENT = {
-  title: "A Legacy of Faith Through Time",
+  title: "Mother of God Cathedral",
   subtitle: "Journey through decades of spiritual heritage, sacred moments, and unwavering devotion",
   cta: "Explore Our Story",
   ctaLink: "/history"
