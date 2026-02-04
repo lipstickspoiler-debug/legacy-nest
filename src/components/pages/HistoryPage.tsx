@@ -25,7 +25,6 @@ export default function HistoryPage() {
   return (
     <div className="relative min-h-screen bg-background">
       <Header />
-
       {/* Hero Section */}
       <section className="relative w-full min-h-[70vh] flex items-center justify-center overflow-hidden pt-24">
         <div className="absolute inset-0">
@@ -46,7 +45,6 @@ export default function HistoryPage() {
           </p>
         </motion.div>
       </section>
-
       {/* Eras Content */}
       <div className="relative min-h-[400px]">
         {isLoading ? null : eras.length > 0 ? (
@@ -79,11 +77,25 @@ export default function HistoryPage() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="inline-block mb-4"
                       >
-                        <span className="font-paragraph text-sm uppercase tracking-wider text-soft-gold">
-                          {era.startYear && era.endYear
-                            ? `${era.startYear} - ${era.endYear}`
-                            : 'Era'}
-                        </span>
+
+                      </motion.div>
+
+                      <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-100px' }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        className="font-heading text-5xl md:text-6xl text-deep-brown mb-8"
+                      >
+                        {era.eraTitle}
+                      </motion.h2>
+
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-100px' }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                      >
                       </motion.div>
 
                       <motion.h2
@@ -143,7 +155,6 @@ export default function HistoryPage() {
           </div>
         )}
       </div>
-
       <Footer />
     </div>
   );

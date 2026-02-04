@@ -203,11 +203,9 @@ export default function HomePage() {
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
       `}</style>
-      
       <ScrollProgress />
       <NoiseOverlay />
       <Header />
-
       {/* --- HERO SECTION --- */}
       <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
         {/* Cinematic Background */}
@@ -229,46 +227,7 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-6 flex flex-col items-center text-center">
-          <motion.div
-            style={{ x: mousePosition.x * -1, y: mousePosition.y * -1 }}
-            className="mb-8"
-          >
-            <span className="inline-block py-1 px-3 border border-off-white/30 rounded-full text-xs font-paragraph tracking-[0.2em] text-off-white/80 uppercase mb-6 backdrop-blur-sm">
-              EST:1599
-            </span>
-            <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-off-white leading-[0.9] tracking-tight mix-blend-overlay opacity-90">
-              {HERO_CONTENT.title}
-            </h1>
-            <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-transparent text-stroke absolute top-8 left-0 right-0 mx-auto leading-[0.9] tracking-tight pointer-events-none select-none blur-[1px]">
-              {HERO_CONTENT.title}
-            </h1>
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="font-paragraph text-lg md:text-xl text-off-white/90 max-w-2xl leading-relaxed mb-12 font-light"
-          >
-            {HERO_CONTENT.subtitle}
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-          >
-            <a
-              href={HERO_CONTENT.ctaLink}
-              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-soft-gold/10 backdrop-blur-md border border-soft-gold/30 text-off-white font-paragraph tracking-wide rounded-sm overflow-hidden transition-all duration-500 hover:bg-soft-gold hover:text-deep-brown hover:border-soft-gold"
-            >
-              <span className="relative z-10">{HERO_CONTENT.cta}</span>
-              <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-              <div className="absolute inset-0 bg-soft-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-            </a>
-          </motion.div>
-        </div>
+        <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-32 flex flex-col items-center justify-center text-center h-full"> <motion.div style={{ x: mousePosition.x * -1, y: mousePosition.y * -1 }} className="mb-12 relative"> <span className="inline-block py-2 px-5 border border-off-white/40 rounded-full font-paragraph tracking-[0.25em] text-off-white/90 uppercase mb-8 backdrop-blur-sm text-lg shadow-lg"> EST:1599 </span> <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-off-white leading-[0.9] tracking-tight relative z-10"> {HERO_CONTENT.title} </h1> <h1 className="font-heading text-5xl md:text-7xl lg:text-9xl text-transparent text-stroke absolute top-0 left-0 right-0 mx-auto leading-[0.9] tracking-tight pointer-events-none select-none blur-[1px] opacity-70"> {HERO_CONTENT.title} </h1> </motion.div> <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 1 }} className="font-paragraph text-xl md:text-2xl text-off-white/90 max-w-3xl leading-relaxed mb-16 font-light"> {HERO_CONTENT.subtitle} </motion.p> <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.8, duration: 0.8 }}> <a href={HERO_CONTENT.ctaLink} className="group relative inline-flex items-center gap-4 px-10 py-5 bg-soft-gold/15 backdrop-blur-md border border-soft-gold/40 text-off-white font-paragraph tracking-wide rounded-lg overflow-hidden transition-all duration-500 hover:bg-soft-gold hover:text-deep-brown hover:border-soft-gold shadow-xl"> <span className="relative z-10 text-lg font-medium">{HERO_CONTENT.cta}</span> <ArrowRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-2" /> <div className="absolute inset-0 bg-soft-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" /> </a> </motion.div> </div>
 
         {/* Scroll Indicator */}
         <motion.div
@@ -281,7 +240,6 @@ export default function HomePage() {
           <span className="text-[10px] uppercase tracking-[0.3em] text-off-white/60 font-paragraph">Scroll</span>
         </motion.div>
       </section>
-
       {/* --- INTRO SECTION (The Vision) --- */}
       <section className="relative py-32 lg:py-48 px-6 overflow-hidden">
         <div className="max-w-[100rem] mx-auto">
@@ -352,7 +310,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- STICKY PARALLAX DIVIDER --- */}
       <section className="relative h-[60vh] w-full overflow-hidden flex items-center justify-center bg-deep-brown text-off-white clip-path-slant">
         <div className="absolute inset-0 opacity-30">
@@ -376,7 +333,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* --- FEATURES GRID (The Archive) --- */}
       <section className="relative py-32 px-6 bg-off-white">
         <div className="max-w-[100rem] mx-auto">
@@ -440,7 +396,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* --- IMMERSIVE CTA SECTION --- */}
       <section className="relative py-40 px-6 bg-deep-brown overflow-hidden">
         {/* Animated Background Particles */}
@@ -488,7 +443,6 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
