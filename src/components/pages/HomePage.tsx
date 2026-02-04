@@ -3,7 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView, MotionValue } from 'framer-motion';
 import { ChevronDown, ArrowRight, Cross, Calendar, Users, BookOpen, Play, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Foo
+$0ter from '@/components/Footer';
 import { Image } from '@/components/ui/image';
 
 // --- Types & Interfaces ---
