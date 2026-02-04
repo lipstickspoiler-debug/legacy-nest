@@ -219,11 +219,11 @@ export default function HomePage() {
             <Image
               src={ASSETS.heroSource}
               alt="Sanctuary Background"
-              className="w-full h-full object-cover brightness-[0.65]"
-            />
+              className="w-full h-full object-cover brightness-[0.65] border-0 border-dashed border-gray-200 opacity-[1]"
+              focalPointX={50.847457627118644}
+              focalPointY={20.25423728813558} />
           </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-b from-deep-brown/60 via-transparent to-background" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.4)_100%)]" />
+
         </div>
 
         {/* Hero Content */}
