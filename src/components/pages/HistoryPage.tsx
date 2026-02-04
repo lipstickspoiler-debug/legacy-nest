@@ -77,25 +77,6 @@ export default function HistoryPage() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="inline-block mb-4"
                       >
-
-                      </motion.div>
-
-                      <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: '-100px' }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
-                        className="font-heading text-5xl md:text-6xl text-deep-brown mb-8"
-                      >
-                        {era.eraTitle}
-                      </motion.h2>
-
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: '-100px' }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                      >
                       </motion.div>
 
                       <motion.h2
